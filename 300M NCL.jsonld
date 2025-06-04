@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nAs a DRep, EMURGO votes No on the Info Action titled Set a 300 million ADA Net Change Limit for Epochs 563–635.\n\nRationale\n\nEMURGO stands by its position on theSet a 300 million ADA Net Change Limit for Epochs 563–635 (637e3c256da9c1350847ca3211e8c44e3660a4471e8b6f68a8c537746b4aeb7300). Repeatedly adjusting the cap could create delays in the governance process, which may prevent critical funding from reaching the necessary projects, ultimately slowing down Cardano’s development.\nTo conclude, the proposed 350M ADA for the 2025 NCL, which was approved by the majority of DReps, represents the maximum possible withdrawal amount from the Treasury, but it’s not a fixed target that must be fully used. EMURGO believes this is a reasonable initial cap for the year.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
