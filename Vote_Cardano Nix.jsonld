@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO votes YES on the governance action to fund the maintenance and enhancement of Cardano.nix by MLabs.\n\nRationale\n\nCardano.nix is a foundational toolset that enables developers and operators to deploy Cardano infrastructure with reproducible builds via the Nix ecosystem. Its use by key Cardano stakeholders such as IOG and the Daedalus Wallet team underlines its importance in the broader development and operations landscape.\n\nThe proposal is focused on ensuring Cardano.nix remains compatible with upstream changes in Nixpkgs, Cardano node versions, and the Haskell ecosystem. It also plans to include usability enhancements and features based on evolving community needs. By preventing drift and maintaining compatibility, this work safeguards deployment stability for SPOs, dApp developers, and enterprises alike.\n\nFrom a technical and operational perspective, the request is modest in scope, centered on necessary maintenance and minor improvements with clear deliverables and timeline. Given MLabs' proven expertise and consistent track record in Cardano infrastructure tooling, EMURGO believes this proposal represents high value with relatively low risk.\n\nConclusion\n\nIn conclusion, EMURGO strongly supports this proposal as a strategic investment in the reliability and robustness of Cardano's developer tooling ecosystem. Ensuring Cardano.nix continues to evolve and support reproducible infrastructure will enhance operational efficiency and lower onboarding friction for new builders."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
