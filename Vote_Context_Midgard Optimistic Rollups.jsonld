@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action for Midgard – Optimistic Rollups, based on the rationale below.\n\nRationale\nMidgard presents a bold, deeply Cardano-native approach to rollups, directly leveraging the strengths of the eUTxO model to enable permissionless, non-custodial, and censorship-resistant L2s. Unlike many Ethereum-based alternatives, Midgard’s architecture allows for simplified, single-party fraud proofs and seamless fee alignment with L1 via ADA-based transactions.\n\nIts tokenless design, L1-fee contribution model, and support for decentralized operators make it a potential cornerstone for scalable Cardano dApps. The proposal is highly technical but aligns with the core goals of L2 expansion, and the team at Anastasia Labs has a proven open-source track record.\n\nConclusion\nGiven the innovation, alignment with Cardano’s architecture, and the potential for long-term L1 economic value, EMURGO supports this proposal and votes Yes."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
