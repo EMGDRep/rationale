@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action titled AdaStat.net Cardano blockchain explorer.\n\nRationale\nAdaStat.net is a long-standing and trusted blockchain explorer that contributes significantly to Cardano’s decentralization and transparency. Its consistent reliability, user-friendly interface, and real-time insights make it an essential tool for SPOs, DReps, developers, and users alike.\n\nWe especially value its privacy-conscious design, no-tracking policy, and free public API, which align with Cardano’s values. By continuing support for AdaStat, this proposal helps strengthen the infrastructure layer of the ecosystem—ensuring critical data remains accessible and open.\n\nConclusion\nAdaStat has proven its value to the Cardano community and deserves continued support to stay robust, relevant, and community-powered.\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
