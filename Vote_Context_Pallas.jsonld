@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO, as a DRep, votes YES on \"Pallas: Sustaining Critical Rust Tooling for Cardano,\" recognizing its essential contribution to the Cardano developer ecosystem.\n\nRationale\nPallas has proven itself as a foundational open-source library for Rust-based development within Cardano. It provides critical building blocks such as cryptographic primitives and CBOR encoding, serving as a backbone for many high-impact projects including Aiken, Lucid, Mithril, and Amaru. These integrations demonstrate Pallas’ wide utility and indispensable role in supporting infrastructure across the Cardano ecosystem.\n\nThe proposal outlines a clear, focused plan to sustain and enhance Pallas through ongoing maintenance, updates, and community engagement. TxPipe’s active track record, combined with their technical competence, provides confidence in their ability to deliver. The open-source nature of this project also ensures transparency and continued contributions from the broader community, aligning with Cardano’s principles of decentralization and collaboration.\n\nIn conclusion, EMURGO supports this proposal and we're optimistic it will contribute to Cardano ecosystem’s long-term resilience and developer experience, enabling innovation and reducing infrastructure complexity for builders working in Rust."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
