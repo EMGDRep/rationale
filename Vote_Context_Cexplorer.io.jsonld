@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action to fund Cexplorer.io – Developer-Focused Blockchain Explorer for Cardano, based on the rationale below.\n\nRationale\nCexplorer.io stands out as a high-traffic, well-maintained blockchain explorer already trusted by many users. Its robust infrastructure, clear deliverables, and strong team give us confidence in its ability to continue delivering real-time insights and developer-facing tools. While Cardano has several explorers, the platform’s proven utility and community presence justify further investment. Supporting this proposal ensures ongoing reliability and usability for developers, SPOs, and end users alike.\n\nConclusion\nIn conclusion, EMURGO supports this proposal due to its track record, high usage, and relevance to ecosystem infrastructure, especially for developer and user transparency needs."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
