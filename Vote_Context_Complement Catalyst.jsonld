@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action to fund Complement: Enabling Better Community Reviews.\n\nRationale\nEMURGO recognizes this proposal as a timely contribution toward refining the governance infrastructure surrounding Catalyst. By introducing decentralized identity, reputation tracking, and quadratic funding models, it opens up pathways for more equitable and efficient community participation.\n\nWe see strong potential in its experiment with reviewer-proposal pairing and structured impact reporting, both of which could help address long-standing issues in quality control and Sybil resistance. The inclusion of public dashboards and DID-backed performance data also strengthens transparency across the board.\n\nThis initiative doesn’t only aim to improve Catalyst—it also gives the community a clearer view of how identity-based governance might work on Cardano in the future. Since the budget also supports Cardano-native builders, we believe this is a smart and strategic reinvestment.\n\nEMURGO is voting Yes in support of this effort, and we look forward to the insights it will generate for broader governance evolution.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
