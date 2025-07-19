@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action to support the Input Output Research (IOR): Cardano Vision – Work Program 2025 based on rationale below.\n\nRationale\nThe Cardano Vision work program represents a strategic backbone for the ecosystem’s next chapter. As the network shifts toward decentralized governance, continued research leadership is essential to ensure technical continuity, protocol integrity, and credible innovation.\n\nThis proposal offers a comprehensive, multi-year framework grounded in academic rigor and designed to produce actionable insights ranging from peer-reviewed papers to validated prototypes and CIPs. With a proven history of delivering foundational breakthroughs across Cardano’s protocol stack, Input Output Global remains uniquely positioned to execute this initiative with the depth, expertise, and consistency it demands. EMURGO votes yes on this proposal as a foundational layer of Cardano’s future resilience."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
