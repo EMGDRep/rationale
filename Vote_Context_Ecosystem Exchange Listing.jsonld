@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action to fund Ecosystem Exchange Listing and Market Making service pool submitted by Flowdesk.\n\nRationale\nThis proposal addresses two key bottlenecks in Cardano’s growth: the lack of Cardano Native Tokens (CNTs) on Tier 1 exchanges and the absence of institutional-grade market-making. Without access to these critical components, many CNTs remain illiquid and isolated from broader market participation.\n\nFlowdesk, a well-established market infrastructure provider recently backed by BlackRock and HV Capital, proposes a service model that is transparent, non-custodial, and results-driven. The company will not receive any funds from the Intersect treasury for facilitating the listings. Instead, it will act as a gatekeeper, ensuring that only projects with verified agreements and adequate on-chain liquidity qualify for support. Treasury funds will be used to pay exchanges directly or fund MMAAS for eligible projects.\n\nEMURGO believes that increasing CNT presence on major exchanges and ensuring sustained liquidity through MMAAS will not only improve token accessibility but also drive more users, capital, and confidence into the Cardano ecosystem. The value it promises in strategic market access, if executed with strong oversight, is worth supporting."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
