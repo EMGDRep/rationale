@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action titled Expanding Stablecoin / Cardano Native Asset Support / Fiat Ramps based on the rationale below.\n\nRationale\nThis proposal tackles several critical infrastructure gaps that have long limited Cardano’s growth in DeFi, enterprise use, and global accessibility. From enabling institutional-grade custody to expanding the availability of USDA on exchanges and in frontier markets, the deliverables outlined show a clear path to solving real adoption barriers. EMURGO especially values the emphasis on low-cost on/off ramps and real-world integrations, such as payroll and remittances, which reflect Cardano’s founding mission to create equitable financial access. We also note that with the budget asked, the team plans to scale operations significantly and has demonstrated experience in both crypto infrastructure and global payments.\n\nCardano’s growth depends not only on technical evolution but also on practical usability across regions where blockchain can make a tangible difference. This proposal represents a coordinated push to realize that potential. We support the initiative and look forward to closely monitoring its execution and impact."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
