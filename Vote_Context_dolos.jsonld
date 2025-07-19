@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO, as a DRep, votes Yes of the “Dolos: Sustaining a Lightweight Cardano Data Node” proposal, based on the rationale provided below.\n\nRationale\nDolos represents a meaningful advancement in Cardano’s developer infrastructure. Designed as a lightweight data node, it enables dApps to query blockchain data efficiently without the resource demands of a full node. The project is already live, open source, and actively maintained by TxPipe, an established and proven contributor to the Cardano ecosystem. With over 366 commits and 21 contributors, Dolos has gained traction among developers who rely on it for fast, reliable access to on-chain data.\n\nThis proposal requests funding to ensure long-term compatibility with Cardano protocol updates, continued performance optimization, and improved developer support. Maintaining its stability is critical to the smooth functioning of other infrastructure projects built around it. By supporting this proposal, EMURGO affirms the value of tools that enhance scalability, developer experience, and decentralization across Cardano.\n\nConclusion\nIn conclusion, EMURGO supports this proposal as a strategic investment in Cardano’s backend infrastructure. We believe Dolos will play a key role in expanding accessibility and performance for developers and dApps, and we commend TxPipe’s continued commitment to open-source innovation."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
