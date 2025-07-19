@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action to fund ZK Bridge.\n\nRationale\nThis proposal tackles one of Cardano’s challenge: the absence of a trustless, scalable bridge infrastructure. By building a zero-knowledge bridge framework, it opens the door for safe interoperability with external chains, unlocking liquidity, boosting utility, and laying the foundation for future ZK-powered innovations like digital identity and privacy layers.\n\nEMURGO acknowledges the strength of the proposing team, Eryx, whose proven expertise in cryptography and Aiken smart contracts adds confidence to the project's feasibility. We also recognize that although the cost has risen compared to earlier stages of ZK experimentation, the proposed output reflects a higher degree of sophistication and system-level relevance.\n\nWhile future sustainabilityI models would further strengthen this initiative, we believe this proposal is a critical enabler of Cardano’s long-term interoperability strategy. Therefore, we support this governance action."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
