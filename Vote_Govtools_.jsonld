@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary:\n\nEMURGO as DRep abstains from the governance action to fund Cardano GovTool – Budget for 12 months of full active maintenance and development.\n\nRationale:\nWe recognize that GovTool plays a vital role in shaping Cardano’s on-chain governance experience. The proposal outlines clear intentions and presents ongoing improvements in transparency and accessibility. However, there are still areas that need deeper clarity, particularly regarding execution risk and delivery accountability.\n\nThe timing of this proposal coincides with a pivotal moment in Cardano’s governance development. While the team behind the proposal is respected and has been involved since the tool’s inception, this context places even more importance on demonstrating operational resilience and clearly defined milestones. As it stands, the proposal leaves room for doubt regarding whether the team can sustain momentum and meet expectations in this critical phase.\n\nWe abstain from voting at this time, not out of opposition, but out of caution. We invite the proposers to strengthen their narrative around execution strategy and delivery assurance to ensure lasting trust in Cardano's foundational governance infrastructure"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
