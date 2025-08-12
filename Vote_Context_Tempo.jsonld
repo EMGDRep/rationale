@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary:\n\nEMURGO as DRep votes NO on the governance action to fund Tempo for Cardano Governance – Maintenance & Development Budget for 2025.\n\nRationale\n\nEMURGO appreciates and acknowledges Tempo.Vote’s intention to enhance Cardano governance accessibility, particularly its efforts in running independent infrastructure and offering mobile-friendly governance tools. These contributions align with Cardano’s long-term vision for decentralization and user empowerment.\nHowever, as this proposal functions as a Budget Info Action, which signals community intent for future treasury withdrawal, we believe it must meet a higher threshold of clarity and accountability. At this stage, the proposal falls short in several key areas:\n\nThe budget requested lacks sufficient justification. No clear roadmap, milestones, or timeline have been provided to track the proposed deliverables.\n\nDetails regarding the development team, their past contributions, or their public accountability mechanisms are missing.\n\nThere are no stated metrics for success or community impact, making it difficult to evaluate outcomes.\nAlthough Selfdriven is listed as the fund administrator, no governance process for fund management has been described.\n\nWhile we support the proposed features, such as mobile-friendly governance action creation and improved UX, the absence of structural elements and execution clarity limits our confidence in the proposal as a credible basis for future funding.\n\nConclusion \nWe encourage Tempo.Vote to revise and resubmit with stronger documentation, clearer financial breakdowns, and robust transparency mechanisms. The Cardano ecosystem benefits from tools like Tempo, and we look forward to seeing a future iteration that the community can confidently support."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
