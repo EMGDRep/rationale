@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as DRep votes NO on governance action titled “Withdraw ₳5M for Cardano's Global Listing Expansion - Powered by Snek”\n\nRationale\nThe Snek team has demonstrated exceptional execution capability, securing Tier 1 listings through self-funding and driving unmatched adoption for a Cardano-native token. These achievements are commendable and recognized.\n\nHowever, EMURGO maintains a principle that treasury allocations for exchange listings should be tied to clear, measurable benefits for the broader ecosystem, either through collective infrastructure, demonstrable long-term ROI, or repayment to the Treasury. In its current form, this proposal focuses on a single-token listing without such mechanisms in place, creating a precedent that may be difficult to sustain.\n\nConclusion\nWe invite the Snek team to submit a revised version that:\n\nProvides a corrected, transparent budget\nEstablishes either a repayment model or a shared infrastructure plan\nAligns deliverables with measurable ecosystem-wide outcomes\n\nWith such adjustments, EMURGO would be open to reassessing support."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
