@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO DRep votes YES on the Budget Info Action titled “₳5M Loan for Cardano’s Global Listing Expansion - Powered by SNEK.”\n\nRationale\n\nWe view this proposal as an important innovation in governance. By introducing a loan-based model, it sets a precedent for how Treasury funds can be used responsibly while ensuring capital can be recycled back into the ecosystem. This aligns with EMURGO’s vision of evolving Cardano’s governance with sustainability and accountability at its core.\n\nThe Snek Foundation has already proven execution capacity by self-funding Tier 1 exchange listings on Kraken, Crypto.com, and KuCoin, and is now positioned to expand Cardano’s visibility and liquidity globally. The inclusion of a high-profile Board of Advisors adds credibility and alignment with Cardano’s broader strategic goals.\n\nConclusion\n\nEMURGO supports this governance action as a meaningful step toward strengthening Cardano’s market presence and governance maturity. If this governance action passes, the subsequent Treasury Withdrawal should include a clear repayment plan and well-defined tangible success metrics. \n\nThese details will be critical to ensure accountability and to demonstrate the measurable benefits this initiative brings to the broader Cardano ecosystem.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
