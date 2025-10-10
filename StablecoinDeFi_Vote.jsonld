@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as DRep votes YES on the governance action titled Stablecoin DeFi Liquidity Budget.\n\nRationale\nEMURGO supports this proposal as we believe it directly strengthens the foundations of Cardano’s decentralized finance ecosystem. Deep, reliable liquidity, especially in fiat-backed stablecoins, is critical for onboarding new users, enabling developers, and ensuring that DeFi protocols can scale sustainably.\n\nThis proposal introduces a balanced model: revenue generation for the treasury through protocol deployment, legal structures to safeguard community funds, and transparent oversight via the tDAO with dRep participation. Importantly, it creates public goods such as open-source governance contracts and legal frameworks that will benefit future initiatives beyond this single fund.\n\nThe mechanism to minimize ADA price impact through OTC deals and gradual liquidation demonstrates responsibility and foresight. By seeding liquidity now, Cardano positions itself to attract professional market makers, spur innovation, and increase long-term adoption. \n\nConclusion\n\nEMURGO believes this initiative is well-structured, constitutionally compliant, and crucial for Cardano’s growth trajectory. As one of the interim committee members, EMURGO is committed to ensuring this fund is administered responsibly, transparently, and always in the best interest of the community."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
