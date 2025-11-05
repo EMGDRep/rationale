@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as DRep votes NO on the governance action to adopt Cardano Constitution v2.3.\n\nRationale\n\nEMURGO deeply appreciates Yuta’s leadership and continued dedication in advancing the Cardano Constitution. The proposed v2.3 introduces valuable refinements to structure, consistency, and readability that contribute to the ongoing evolution of Cardano’s governance framework.\n\nHowever, several changes in this version raise substantive concerns regarding governance clarity and decentralization safeguards. The revised Net Change Limit weakens the explicit link between approved budgets and treasury withdrawals, potentially diluting fiscal accountability. \n\nThe updated Audit Requirement creates uncertainty around execution and funding responsibility, reducing procedural clarity. Additionally, the expanded Custodian Consent clause broadens custodial authority, which may inadvertently increase centralization risks and weaken user consent protections.\n\nWhile these issues may stem from good intentions to streamline the Constitution and the governance process, the current wording introduces ambiguity in areas that are foundational to Cardano’s accountability and decentralized governance model.\n\nConclusion\n\nEMURGO’s NO vote reflects a commitment to preserving procedural integrity, transparency, and decentralization within Cardano’s constitutional design. We commend Yuta’s continued effort and emphasize that EMURGO remains ready to collaborate and facilitate further discussions to refine these sections in future amendments, ensuring clarity and balance in the governance framework moving forward."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
