@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as a DRep votes YES for the Budget Info Action titled “Cardano Critical Integrations Budget” with the rationale provided below.\nRationale\n\nWe see this action as a proactive step to accelerate Cardano’s ecosystem maturity. The proposal focuses on critical integrations that Cardano needs for large-scale economic activity and external liquidity integration, including tier one stablecoins and the supporting infrastructure such as oracle networks, cross-chain bridges, institutional digital asset custody and wallet infrastructures, and on-chain analytics platforms. \n\nDelivering these integrations at the ecosystem level will strengthen the shared foundations every dApp depends on, expand access to external capital, and position tier one stablecoin onboarding as a clear near-term milestone for DeFi growth.\n\nWe also place strong weight on Intersect’s leading role in this initiative. This Budget Info Action is submitted by Intersect, which will act as the Administrator under Cardano’s constitutional framework and administer the entire budget. \n\nInput | Output Global, the Cardano Foundation, and EMURGO are supporting this pathway as co-authors, with the Midnight Foundation providing strong support in advancing all commercial discussions and negotiations. All five organizations are represented through a shared Steering Committee. \n\nThis structure, with Intersect leading as the Constitutional Administrator and the founding entities backing the program’s strategic direction, increases confidence in partner selection, execution readiness, and long-term ecosystem value. EMURGO’s direct involvement in the Steering Committee and negotiations reflects our commitment to ensuring these integrations deliver meaningful outcomes for Cardano.\n\nEMURGO believes this budget is vital for onboarding critical integrations that Cardano requires for large-scale economic activity and external liquidity integration. We therefore endorse this Budget Info Action and cast a YES vote."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
