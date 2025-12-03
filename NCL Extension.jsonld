@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO, as a DRep, votes YES on the Info Action titled “2025 Net Change Limit Extension.” Our rationale is provided below.\n\nRationale\n\nThis Info Action keeps the ₳350M Net Change Limit (NCL) unchanged and extends its duration by eight epochs. Since the current NCL expires at the conclusion of Epoch 604 and treasury withdrawals enact one epoch after ratification, this extension gives the Cardano Critical Integrations Budget a clear and constitutional runway to complete within the existing NCL. It is a straightforward timeline fix that upholds continuity without changing the cap that the community agreed on or weakening financial discipline.\n\nWe appreciate HOSKY and other Constitutional Committee members for submitting this in such a timely and constructive way. We see this as a strong sign of trust and collaboration between the founding entities and the Cardano community, showing that when governance needs support, we step in for each other and keep the process moving forward together. \n\nSince the next NCL has not yet been proposed, this short extension provides a responsible bridge, allowing governance to transition into the next NCL period without unnecessary friction. For these reasons, EMURGO votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
