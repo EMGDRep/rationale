@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO, as a DRep, votes YES to add Cardano Curia as a new Constitutional Committee member, with rationale below.\n\nRationale\n\nA Constitutional Committee member’s retirement reduced the committee to six members, which is below the committeeMinSize parameter. This has effectively paused Constitutional Committee ratification for most governance actions. Ratifying this action is the necessary continuity step to bring the Constitutional Committee back to seven members so that governance can function normally again.\n\nIntersect’s snap election followed constitutional guardrails and a stake-weighted DRep process, and Cardano Curia received the highest support from participating DReps. We respect this community decision and trust Cardano Curia to carry the responsibilities of constitutional oversight for the remainder of the term. For these reasons, EMURGO votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
