@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as DRep votes YES on the governance action titled Cardano Blockchain Ecosystem Constitution v2.4 with the rationale outlined below.\n\nRationale\n\nEMURGO appreciates Yuta’s continued leadership and constructive engagement with community feedback in advancing the Cardano Constitution. Since our previous NO vote on v2.3, several of our key concerns have been addressed in v2.4, justifying a change in our voting position.\n\nIn particular, revisions to terminology related to ADA ownership and custodianship improve clarity around consent and representation. The removal of unenforceable expectation clauses strengthens the Constitution’s role as a binding and operational governance document. \n\nWe also support the simplification of the governance process through the removal of the mandatory Budget Info Action, while noting positively that enhanced accountability and audit requirements continue to apply consistently to all Treasury Withdrawal governance actions, preserving core fiscal safeguards.\n\nOverall, v2.4 represents a material improvement over the current v1.0 Constitution and advances Cardano’s governance in a more practical, enforceable, and ecosystem aligned direction. We view this Constitution as a work in progress and are hopeful that, over time, the ecosystem will continue to develop more structured and iterative processes to refine its provisions, reduce remaining ambiguities, and ensure the Constitution performs as effectively as possible in practice. For these reasons, EMURGO votes yes.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
