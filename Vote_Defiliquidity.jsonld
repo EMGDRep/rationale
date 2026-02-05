@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes YES on the treasury withdrawal titled “Cardano DeFi Liquidity Budget – Withdrawal 1”, with rationale outlined below.\n\nRationale\nThis withdrawal is a direct implementation step of the previously approved Stablecoin DeFi Liquidity Budget Info Action. It funds the minimum foundational work needed to operationalize the program, specifically the legal vehicle setup, the administrative smart contract and interfaces, and an independent security audit, without expanding scope or changing objectives.\n\nEMURGO also supports the proposed accountability structure. Funds are received and managed on chain through an Amaru contract with a 5 of 9 multi-signature requirement, disbursed based on milestones, and subject to tDAO oversight with dRep governance controls. With these safeguards in place, EMURGO views Withdrawal 1 as a reasonable and constitutionally aligned step to execute what the community has already approved. For these reasons, EMURGO votes yes."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
