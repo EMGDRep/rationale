@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as a DRep votes YES on the governance action titled “Increase Transaction and Block Memory Units (Part 1 of 2)”, based on the rationale outlined below.\n\nRationale\n\nThis proposal removes a practical bottleneck for Plutus development by relaxing per-transaction constraints, allowing more meaningful work to be executed in a single transaction without being driven by network congestion considerations. The change reduces unnecessary script fragmentation and improves developer and user experience without modifying the cost model or introducing new protocol complexity.\n\nFrom a governance perspective, the update is responsibly designed and well substantiated. It remains within Constitutional guardrails, has undergone extensive technical review, and has been validated on multiple testnets. \n\nThe proposal also reflects a disciplined Conway era governance process, with clear staging and correlation of parameters. For these reasons, EMURGO votes yes."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
