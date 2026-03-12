@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO, as a DRep, votes YES on Info Action titled Cardano Budget Process Framework (facilitated by Intersect), with rationale outlined below.\n\nRationale\n\nEMURGO supports initiatives that strengthen transparency and operational clarity in Cardano’s governance processes. Publishing the Intersect Budget Process Framework as an on-chain reference helps ensure that all governance participants operate from a shared understanding of how ecosystem budgeting is conducted.\n\nThe framework outlines a structured, multi-stage process covering strategic planning, proposal preparation, review, consolidation, and execution. Formalizing this workflow improves predictability for proposers and DReps, while also helping to raise proposal quality through standardized templates, strategic alignment requirements, and structured feedback cycles.\n\nIn addition, the inclusion of clear proposal data requirements, work package based budgeting, and milestone tracking mechanisms contributes to stronger accountability for treasury funded activities. The framework also introduces safeguards such as identity verification, proposal thresholds, and review phases that help reduce spam and improve the overall signal quality of submissions.\n\nFinally, defining the administrative and oversight mechanisms for execution provides important clarity on how approved proposals will be delivered and monitored. The described use of transparent smart contract based disbursement, multi party checks and balances, and milestone tracking aligns with the goals of responsible treasury stewardship.\n\nFor these reasons, EMURGO supports recording this framework as a governance reference and therefore votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
