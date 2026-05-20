@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as a DRep votes YES on the treasury withdrawal titled “IO & Ensurable Systems: Cardano Maintenance Initiative”, with rationale outlined below.\n\nRationale\n\nEvery capability the Cardano ecosystem is building toward depends on a platform that is stable, well-tested, and reliably released. The Cardano Maintenance proposal funds exactly that foundation. It is not a feature investment; it is the operational envelope without which every other treasury-funded initiative carries elevated execution risk.\n\nThe scope is comprehensive and appropriately so. Node bugfixing, CI/CD operations, security reviews, E2E testing, performance benchmarking, Plutus interpreter maintenance, DB-Sync consistency, and the Cardano Blueprint documentation together constitute the non-negotiable maintenance surface of a production blockchain. Deferred maintenance compounds, and the cost of catching up consistently exceeds the cost of continuity.\n\nIO, in collaboration with Ensurable Systems, is the team best positioned to deliver this work. The institutional knowledge embedded across consensus, ledger, networking, and release engineering is not easily replicated. The 62.1 million ADA request reflects the true cost of sustaining a production-grade blockchain at this level of complexity across a nine-month period, and EMURGO is satisfied that it is a proportionate ask. For these reasons, EMURGO votes YES.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
