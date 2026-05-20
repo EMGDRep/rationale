@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as a DRep votes YES on the treasury withdrawal titled “IO: Cardano High Assurance Technical Collaboration”, with rationale outlined below.\n\nRationale\n\nThis proposal funds the infrastructure that makes Cardano’s positioning as a high-assurance platform credible at the tooling level. Blaster has already proven correctness properties for production DApps, including Djed and USDCx. This proposal extends it to full DApp-level verification, integrates it across four smart contract languages, and delivers it as shared public infrastructure accessible to the entire developer community.\nEMURGO is particularly supportive of the consortium delivery model, with Lantr, Harmonic Labs, SAIB, Midgard Labs, TxPipe, and No.Witness Labs each contributing defined work packages. \n\nThis distributes delivery and long-term maintenance across the ecosystem, reducing dependency on any single team’s future funding. The containerised Developer Environment, converting a multi-day Nix setup into a single-command initialisation, further removes a measurable barrier to developer onboarding. For these reasons, EMURGO votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
