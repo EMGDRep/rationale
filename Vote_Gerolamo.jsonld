@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes ABSTAIN on the treasury withdrawal titled \"The first node in the browser; a Cardano USP\", with rationale outlined below.\nRationale\nEMURGO recognises the technical effort behind this resubmission and acknowledges that HLabs has responded constructively to community feedback by separating proposals and narrowing the scope of this request. A browser-native validating node is a genuinely differentiated capability, and Cardano's eUTxO architecture does create meaningful conditions for it that other chains cannot easily replicate.\n\n\nOur position carries over from our view on the earlier combined proposal. Questions raised through conversations with external technologists about TypeScript as the foundation for a production-grade node environment remain open. We hold that view with humility and do not consider it settled, but it continues to inform our assessment. Additionally, with Amaru and Dingo already funded and progressing, the case for committing treasury resources to a third node implementation in the same cycle, even one scoped to a distinct browser use case, is not yet clearly established to our satisfaction. The Cardano 2030 framework targets two live alternative node clients, a benchmark that existing funded efforts are already working toward.\n\n\nWe appreciate HLabs's continued engagement with the ecosystem and the deliberate effort to right-size this request. Our abstain reflects a continuation of our considered position on node diversity sequencing rather than any new concern about the team or the concept itself.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
