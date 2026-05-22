@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes YES on the treasury withdrawal titled “Pebble & Ecosystem Maintenance: TypeScript Core of Cardano”, with rationale outlined below.\nRationale\nEMURGO previously abstained on the combined HLabs proposal that bundled Gerolamo, Pebble, and tooling maintenance into a single request of over 8 million ADA. Our reservations at that time centered on the scale of the ask, questions around TypeScript as a foundation for a production node, and uncertainty about the necessity of a new smart contract language alongside Aiken. This proposal addresses the first and second concerns directly: Gerolamo is now a separate governance action voted on independently, and this proposal focuses exclusively on Pebble and TypeScript ecosystem maintenance at a materially reduced cost of 4,600,000 ADA.\n\n\nOn Pebble specifically, our view has evolved on the basis of the evidence now available. The UPLC-CAPE benchmark results, produced through IOG’s independent framework, show that Pebble produces on-chain code that outperforms Aiken in both CPU and memory budget and is competitive with Plutarch, while offering an imperative, TypeScript-shaped syntax that addresses a genuinely different developer audience. This is not a redundant addition alongside Aiken; it is a complementary on-ramp for the TypeScript and Solidity developer populations that Aiken’s functional-first design does not serve. The case for Pebble is now grounded in verifiable performance data rather than assertion.\n\n\nThe tooling maintenance component is straightforward. The HLabs TypeScript stack underpins Mesh, Lucid Evolution, Midgard, and a long tail of production dApps. When a hard fork lands, those projects depend on HLabs updating the foundational libraries. Funding that maintenance through this proposal is more efficient than leaving the cost to be absorbed inconsistently across dozens of downstream teams. The governance structure, with an independent oversight board, milestone-based disbursements, and automatic return of unused funds, is well-designed. EMURGO votes YES.\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
