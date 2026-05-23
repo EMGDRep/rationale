@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep abstains on the treasury withdrawal titled \"IO & VacuumLabs: Enhancing Plutus — Performance, Correctness, and Usability\", with rationale outlined below.\nRationale\nThe three workstreams address real and well-understood gaps in Cardano's smart contract infrastructure. Expanding UPLC primitives, investigating the scope check overhead, and extending the Agda metatheory are all technically credible objectives with clear ecosystem relevance. EMURGO does not question the merit of the work or the capability of the teams involved.\nOur reservation is one of timing and prioritisation rather than substance. With several large infrastructure proposals already approved or under consideration in this cycle, EMURGO believes it is prudent to allow the community to assess aggregate treasury commitments before adding further obligations of this scale. This is not a judgment on the proposal itself, but a considered position on responsible sequencing of treasury expenditure.\nEMURGO would welcome a resubmission in a subsequent cycle, and notes that the VacuumLabs co-venture model and IO's demonstrated accountability within the treasury framework are both structural positives that strengthen the case for future support.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
