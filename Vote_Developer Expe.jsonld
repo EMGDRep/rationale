@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\n\nEMURGO as a DRep revises its prior ABSTAIN to YES on the treasury withdrawal titled “IO: Developer Experience Initiative”, with rationale outlined below.\n\nRationale\n\nEMURGO previously abstained on this proposal, citing concerns around attribution methodology and the reliance on third-party coordination for key outcomes. We are revising that position to YES. The proposal has not changed, and we do not withdraw those concerns. What has changed is our assessment of their weight relative to the cost of continued inaction on one of the most important challenges facing the ecosystem.\n\nDeveloper experience is a direct determinant of builder adoption, and the empirical foundation of this proposal, grounded in developer survey data and cross-ecosystem growth analysis, remains stronger than is typical for initiatives of this kind. IO’s track record in delivering complex ecosystem programmes gives us sufficient confidence that the delivery risks flagged in our abstain are manageable in practice. We will monitor progress against the stated outcomes and expect IO to refine coordination and attribution commitments as the programme unfolds."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
