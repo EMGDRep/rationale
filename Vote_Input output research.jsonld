@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes ABSTAIN on the treasury withdrawal titled \"Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research\", with rationale outlined below.\nRationale\nEMURGO recognises the value of IOR's research program and the track record behind it. The 2025 cycle exceeded delivery targets by 20%, produced 24 peer-reviewed papers, and contributed to protocol advancement across consensus, interoperability, and zero-knowledge research. The case for sustained investment in Cardano's research capability is well established, and this proposal continues a program that has delivered meaningful scientific and technical outcomes for the ecosystem.\nThe primary consideration for EMURGO is not the quality of the research, but the scale and structure of the request. The breadth of scope naturally introduces challenges when assessing the relative priority, readiness, and expected impact of individual workstreams. While some areas appear closely aligned with near-term protocol priorities, others are longer-horizon research initiatives whose timelines and implementation pathways are less immediate.\nEMURGO also notes that, by IOR's own account, approximately 20% of research outputs have ultimately been implemented within Cardano. This is not a reflection on the quality or importance of the research itself, as foundational research often generates value beyond direct implementation. However, when evaluating a treasury commitment of this size, additional granularity around prioritisation and allocation would assist the community in assessing individual components more directly.\nAt the same time, EMURGO recognises that many of the proposed workstreams are interconnected and may benefit from being pursued within a coordinated research program rather than as entirely separate initiatives. Given both the strategic value of the proposed work and the questions surrounding funding structure and prioritisation, EMURGO remains neutral and therefore votes Abstain.\nConclusion\nEMURGO acknowledges the strength of IOR's research track record and the importance of continued investment in Cardano's long-term technical development. Our abstention reflects a neutral position regarding the allocation structure of this treasury request rather than opposition to the research agenda itself."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
