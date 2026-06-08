@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes YES on the treasury withdrawal titled \"Cardano Vision 2026: Human Centred, Scalable, Post Quantum Secure - IO Research\", with rationale outlined below.\nRationale\nEMURGO previously voted Abstain due to reservations regarding the scale and bundled structure of the proposal. While we continue to believe that greater granularity would improve community evaluation of treasury-funded initiatives, further review has led us to conclude that these concerns are outweighed by the strategic value of the proposed research program and IOR's demonstrated delivery record.\nIOR has consistently delivered meaningful research outputs that have contributed to Cardano's technical development. The proposal addresses several areas of strategic importance, including scalability, post-quantum readiness, interoperability, governance, and developer tooling. Although the breadth of the proposal makes it challenging to assess individual workstreams in isolation, many of these areas are interconnected and form part of a broader long-term research agenda. \nEMURGO therefore believes that the value of maintaining Cardano's research pipeline justifies support for this proposal and has updated its vote from Abstain to Yes.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
