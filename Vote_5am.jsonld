@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "EMURGO as a DRep votes YES on the treasury withdrawal titled \"5am.earth Trust Layer Targeting Vision 2030 KPIs\", with rationale outlined below.\n\nRationale\nThis proposal stands apart from most treasury requests in one important respect: the infrastructure it proposes to scale is already operational on Cardano Mainnet. Project Swaminathan has registered 10,500 farmers and farms on-chain as of May 2026, at 500 registrations per day, with a 100% blockchain success rate. The work being funded is integration and scaling, not greenfield development.\n\nThe scale opportunity is credible. The Syngenta Foundation India network of 26,000 Agri-Entrepreneurs already reaches 2.6 million farmers, and the three named application paths, AE certification via Andamio, traceability and compliance via Zengate Global, and finance and credit via Seedstars SIGMA, are specific, partner-backed, and gated on observable evidence at each milestone. The 10,000,000 ADA hard cap is milestone-gated at 5/2/3 ADA, surplus above $3.5M returns to the Treasury, and the Foundation commits to operating on commercial revenue by 2028 without returning to the Treasury. For these reasons, EMURGO votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
