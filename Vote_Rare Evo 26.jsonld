@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes YES on the treasury withdrawal titled \"Rare Evo and Dev Gov Day 2026: Cardano Title Sponsorship\", with rationale outlined below.\n\nRationale\nRare Evo has established itself as one of the most consistent community-led gatherings in the Cardano calendar, bringing together developers, governance participants, and ecosystem builders in a format that few other events replicate. Title sponsorship secures Cardano's position on the main stage and global livestream, which represents meaningful visibility at a moment when external perception of the ecosystem matters.\n\nThe inclusion of Rare Dev Gov Day is equally relevant. Dedicated space for governance discussion and developer coordination is not incidental to this proposal; it is part of what makes the investment worthwhile beyond brand exposure alone. EMURGO views the 2.75 million ADA request as proportionate for a title sponsorship of this scope, and supports this as a reasonable use of treasury resources for ecosystem presence. For these reasons, EMURGO votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
