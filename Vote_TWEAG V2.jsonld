@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes YES on the treasury withdrawal titled \"Tweag Core Cardano Infrastructure: Treasury Withdrawal 2026–2027\", with rationale outlined below.\n\nRationale\nTweag has been embedded in Cardano's core infrastructure since 2018, leading consensus and ledger work and contributing directly to the design of Peras. This proposal is not an introduction of a new team to a new problem. It is the continuation of a body of work that the ecosystem has already invested in, focused on bringing that work across the finish line and into production.\n\nThe three workstreams are well-chosen and genuinely interdependent. Peras mainnet deployment addresses a finality gap that matters to every DApp and user on the network. History Expiry addresses a storage cost trajectory that, left unresolved, will become a meaningful threat to SPO decentralisation as Leios throughput scales. Conformance testing provides the correctness scaffolding that both Peras and Leios depend on for safe deployment. Treating any of these as separable would increase delivery risk across all three.\n\nTweag's prior treasury engagement, including a track record of open deliverables and milestone-based accountability, gives EMURGO confidence that the governance structure around this proposal is sound. The 18.2 million ADA request reflects the real cost of senior protocol engineering at this level of complexity, and EMURGO is satisfied it is a proportionate ask for the scope of work proposed. For these reasons, EMURGO votes YES."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
