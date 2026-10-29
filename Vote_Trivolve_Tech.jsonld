@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Summary\nEMURGO as a DRep votes YES on the treasury withdrawal titled \"\"PFMS: Bringing Government Scale Adoption to Cardano by Trivolve Tech\"\", with the rationale outlined below.\n\nRationale\nWhile EMURGO has maintained a cautious, selective approach to discretionary treasury spending during ongoing ecosystem considerations, we recognize this proposal as a high-impact strategic imperative for Cardano's global institutional footprint.\n\nThe deployment of the Police & Forensic Management System (PFMS) represents a tangible milestone for real-world enterprise adoption. Securing state-level criminal justice workflows on Cardano validates our layer-1 architecture as institutional-grade infrastructure while generating over 1.5 million verified mainnet transactions annually. Furthermore, the engagement of the Cardano Foundation as the off-chain administrator provides the necessary accountability, milestone gating, and operational rigor required for capital allocations of this magnitude.\n\nCrucially, the economic model aligns with long-term treasury sustainability by returning 70% of third-party verification revenues back to the Cardano Treasury and allocating 20% to core open-source library maintenance. Supporting this proposal directly advances Cardano's competitive enterprise position and drives measurable utility. For these reasons, EMURGO votes yes."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
